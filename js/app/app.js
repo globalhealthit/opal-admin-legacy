@@ -176,6 +176,15 @@ angular.module('opalAdmin', [
 	}])
 
 	.config(function ($httpProvider) {
+		// Disable HTTP caching for development - allows instant template updates
+		if (!$httpProvider.defaults.headers.get) {
+			$httpProvider.defaults.headers.get = {};
+		}
+		$httpProvider.defaults.headers.get['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+		$httpProvider.defaults.headers.get['Pragma'] = 'no-cache';
+		$httpProvider.defaults.headers.get['Expires'] = '0';
+		
+		// Add AuthInterceptor to the array of HTTP interceptors
 		$httpProvider.interceptors.push([
 			'$injector', function ($injector) {
 				return $injector.get('AuthInterceptor');

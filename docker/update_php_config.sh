@@ -36,4 +36,14 @@ sed -ri -e 's!post_max_size =.*!post_max_size = 128M!g' /usr/local/etc/php/php.i
 
 if [ "$PHP_ENV" == "production" ]; then
     sed -i 's/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ALL \& ~E_DEPRECATED \& ~E_STRICT \& ~E_WARNING/' /usr/local/etc/php/php.ini
+else
+    # Development environment: disable opcache for automatic code reloading
+    # https://php.net/opcache.enable
+    sed -ri -e 's!;opcache.enable=.*!opcache.enable=0!g' /usr/local/etc/php/php.ini
+    # Validate timestamps to check for file changes
+    # https://php.net/opcache.validate-timestamps
+    sed -ri -e 's!;opcache.validate_timestamps=.*!opcache.validate_timestamps=1!g' /usr/local/etc/php/php.ini
+    # Check for file changes every request (0 seconds)
+    # https://php.net/opcache.revalidate-freq
+    sed -ri -e 's!;opcache.revalidate_freq=.*!opcache.revalidate_freq=0!g' /usr/local/etc/php/php.ini
 fi
