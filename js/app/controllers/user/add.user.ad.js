@@ -196,9 +196,6 @@ angular.module('opalAdmin.controllers.user.add.ad', ['ui.bootstrap', 'ui.grid'])
 		$scope.languages = [{
 			name: $filter('translate')('USERS.ADD.ENGLISH'),
 			id: 'EN'
-		}, {
-			name: $filter('translate')('USERS.ADD.FRENCH'),
-			id: 'FR'
 		}];
 
 		// Call our API service to get the list of possible roles

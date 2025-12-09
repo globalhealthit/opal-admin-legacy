@@ -19,9 +19,6 @@ controller('user.edit.ad', function ($scope, $uibModal, $uibModalInstance, $filt
 	$scope.languages = [{
 		name: $filter('translate')('USERS.ADD.ENGLISH'),
 		id: 'EN'
-	}, {
-		name: $filter('translate')('USERS.ADD.FRENCH'),
-		id: 'FR'
 	}];
 
 	/* Function for the "Processing" dialog */
