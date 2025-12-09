@@ -17,7 +17,7 @@ services:
     env_file:
       - .env
     expose:
-      - 8080:8080
+      - 8080
     depends_on:
       - redis
     environment:
@@ -35,16 +35,17 @@ services:
     build:
       context: ./services/nginx
       args:
-        NGINX_CONF: nginx_ec2.conf
+        NGINX_CONF: nginx_local.conf
       dockerfile: Dockerfile
     restart: always
     ports:
       - 80:80
-      - 443:443
+      # - 443:443
     volumes:
       - /var/www/.well-known/acme-challenge:/var/www/.well-known/acme-challenge
-      - /etc/letsencrypt/live/mycarexadminlegacy.gheit.co/fullchain.pem:/etc/ssl/certs/fullchain.pem
-      - /etc/letsencrypt/live/mycarexadminlegacy.gheit.co/privkey.pem:/etc/ssl/private/privkey.pem
+      # Comment out SSL certificates for local development
+      # - /etc/letsencrypt/live/mycarexadminlegacy.gheit.co/fullchain.pem:/etc/ssl/certs/fullchain.pem
+      # - /etc/letsencrypt/live/mycarexadminlegacy.gheit.co/privkey.pem:/etc/ssl/private/privkey.pem
     depends_on:
       - app
   cron:
