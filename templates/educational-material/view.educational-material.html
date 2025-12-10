@@ -75,7 +75,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                     <strong>{{'EDUCATION.EDIT.TABLE_CONTENTS'|translate}}</strong> <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': tocSection.open, 'glyphicon-chevron-right': !tocSection.open}"></i>
                 </div>
             </uib-accordion-heading>
-            <div class="row" ng-repeat="toc in eduMat.tocs" style="margin-bottom:7px; border-bottom:1px solid #ddd;">
+            <div class="row" ng-repeat="toc in eduMat.tocs" style="margin-bottom:7px; border-bottom:1px solid var(--palepale);">
                 <h2 style="margin:0 0 7px 0; padding:0 15px; font-size:30px;">{{'EDUCATION.EDIT.ORDER'|translate}} {{toc.order}}</h2>
                 <div class="col-xs-12 col-md-6">
                     <div class="input-group" style="margin-bottom: 7px;">

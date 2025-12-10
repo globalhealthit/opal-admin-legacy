@@ -60,9 +60,6 @@ angular.module('opalAdmin.controllers.user.add', ['ui.bootstrap', 'ui.grid']).
 		$scope.languages = [{
 			name: $filter('translate')('USERS.ADD.ENGLISH'),
 			id: 'EN'
-		}, {
-			name: $filter('translate')('USERS.ADD.FRENCH'),
-			id: 'FR'
 		}];
 
 		// completed registration steps in object notation

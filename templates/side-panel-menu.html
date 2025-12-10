@@ -9,18 +9,18 @@ SPDX-License-Identifier: AGPL-3.0-or-later
     <div class="row side-logo" ng-click="goToHome()">
         <div class="col-md-12">
             <div class="logo">
-                <img style="margin-top: -20px;" class="animated rotateIn" src="images/opal_logo_transparent_purple.png"
+                <img style="margin-top: -20px;" class="animated rotateIn" src="images/mycarex_logo.png"
                      height="130" width="130">
             </div>
-            <h1>opal <strong>ADMIN</strong></h1>
+            <h1>MyCareX <strong>ADMIN</strong></h1>
         </div>
     </div>
     <div id="side-panel-scroll" class="row side-panel-scroll">
         <div ng-repeat="category in navMenu" ng-if="category.menu.length > 0">
             <div class="clearfix">
                 <div class="side-menu-title">
-                    <div style="height: 10px; border-bottom: 1px solid #6f5499;">
-                    <span style="background-color:#e6edfa; padding: 0 10px;">
+                    <div style="height: 10px; border-bottom: 1px solid var(--darker);">
+                    <span style="background-color: var(--paler); padding: 0 10px;">
                       <span class="fas fa-dot-circle"></span>
                       <h2>{{category.name}}</h2>
                     </span>
@@ -45,8 +45,8 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <!-- Profile tools -->
         <div class="clearfix">
             <div class="side-menu-title">
-                <div style="height: 10px; border-bottom: 1px solid #6f5499;">
-                    <span style="background-color:#e6edfa; padding: 0 10px;">
+                <div style="height: 10px; border-bottom: 1px solid var(--darker);">
+                    <span style="background-color: var(--paler); padding: 0 10px;">
                       <span class="fas fa-dot-circle"></span>
                       <h2>{{'NAVIGATION_MENU.PROFILE'|translate}}</h2>
                     </span>

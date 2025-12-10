@@ -7,7 +7,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <div class="form-box form-box-shake animated" ng-class="{'pulse': !formLoaded}">
     <div class="row" style="margin-top:10px;">
         <div class="horz-line" style="height: 10px; text-align: center; margin-left:25px; margin-right:34px">
-      <span style="background-color:#fff; padding: 0 10px;">
+      <span style="background-color: var(--white); padding: 0 10px;">
         <h2 style="display:inline; font-size: 20px;">
           <strong>{{'LOGIN.LOGIN_START'|translate}}</strong>
         </h2>
@@ -35,15 +35,15 @@ SPDX-License-Identifier: AGPL-3.0-or-later
                 </div>
                 <div class="row col-xs-offset-1">
                     <input class="btn btn-primary" ng-class="{'disabled': !loginFormComplete()}" type="submit" value="{{'LOGIN.LOGIN'|translate}}">
-                    <a href="#" ng-show="loginPage" ng-click="changeLanguage();" class="btn btn-primary">{{'LOGIN.ALT_LANGUAGE'|translate}}</a>
+                    <!-- <a href="#" ng-show="loginPage" ng-click="changeLanguage();" class="btn btn-primary">{{'LOGIN.ALT_LANGUAGE'|translate}}</a> -->
                 </div>
             </form>
 
-            <div class="row col-xs-offset-1" style="margin-top:20px;">
+            <!-- <div class="row col-xs-offset-1" style="margin-top:20px;">
                   <a ui-sref="about" class="url-link">
                     {{'LOGIN.DISCLAIMER'|translate}}
                   </a>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
