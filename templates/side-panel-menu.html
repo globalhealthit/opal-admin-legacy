@@ -19,7 +19,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <div ng-repeat="category in navMenu" ng-if="category.menu.length > 0">
             <div class="clearfix">
                 <div class="side-menu-title">
-                    <div style="height: 10px; border-bottom: 1px solid #6f5499;">
+                    <div style="height: 10px; border-bottom: 1px solid var(--darker);">
                     <span style="background-color: var(--paler); padding: 0 10px;">
                       <span class="fas fa-dot-circle"></span>
                       <h2>{{category.name}}</h2>
@@ -45,7 +45,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
         <!-- Profile tools -->
         <div class="clearfix">
             <div class="side-menu-title">
-                <div style="height: 10px; border-bottom: 1px solid #6f5499;">
+                <div style="height: 10px; border-bottom: 1px solid var(--darker);">
                     <span style="background-color: var(--paler); padding: 0 10px;">
                       <span class="fas fa-dot-circle"></span>
                       <h2>{{'NAVIGATION_MENU.PROFILE'|translate}}</h2>
