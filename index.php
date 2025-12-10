@@ -15,7 +15,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 <head>
 	<base href="<?php echo(FRONTEND_REL_URL); ?>">
 
-	<title>opal ADMIN</title>
+	<title>MyCareX ADMIN</title>
 	<meta charset="utf-8">
 	<meta content="text/html; X-Content-Type-Options=nosniff" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -217,7 +217,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 	<link media="all" type="text/css" rel="stylesheet" href="css/style.css">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="mycarex_favicon.png"/>
 </head>
 <body ng-app="opalAdmin" ng-controller="application">
 	<div ng-include="'templates/navbar-menu.html'" ></div>
@@ -225,7 +225,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 		<div ui-view style="position: relative; height: inherit;"></div>
 	</div>
 
-	<footer class="app-version" ng-class="{'login-footer': isIndexPage()}">
+	<!-- <footer class="app-version" ng-class="{'login-footer': isIndexPage()}">
 		<div class="text-right">
 			<a ng-if="!isAboutPage()" ui-sref="about">{{'ABOUT'|translate}}</a>
 			<a ng-if="isAboutPage()" ng-attr-ui-sref="{{ isAuthenticated() ? 'home' : 'login' }}">
@@ -234,7 +234,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later
 			<a href="https://github.com/opalmedapps">{{'SOURCE_CODE'|translate}}</a> ·
 			<span ng-if="build">({{'ENVIRONMENT'|translate}}: {{build.environment_name}})</span>
 		</div>
-	</footer>
+	</footer> -->
 
 </body>
 </html>

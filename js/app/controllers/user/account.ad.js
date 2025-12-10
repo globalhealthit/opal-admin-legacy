@@ -18,9 +18,6 @@ angular.module('opalAdmin.controllers.account.ad', ['ui.bootstrap']).
 		$scope.languages = [{
 			name: "English",
 			id: 'EN'
-		}, {
-			name: "Français",
-			id: 'FR'
 		}];
 
 		$scope.bannerMessage = "";

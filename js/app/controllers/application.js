@@ -15,7 +15,7 @@ angular.module('opalAdmin.controllers.application', ['ui.bootstrap', 'ngIdle', '
 		// Set current user
 		$rootScope.currentUser = Session.retrieveObject('user');
 
-		$rootScope.siteLanguage = null;
+		$rootScope.siteLanguage = 'EN';
 
 		$rootScope.newOpalAdminHost = null;
 		$rootScope.ormsHost = null;
@@ -94,7 +94,7 @@ angular.module('opalAdmin.controllers.application', ['ui.bootstrap', 'ngIdle', '
 		// Set the site language
 		$rootScope.setSiteLanguage = function (user) {
 			if (!user)
-				$rootScope.siteLanguage = 'FR';
+				$rootScope.siteLanguage = 'EN';
 			else {
 				$rootScope.siteLanguage = user.language;
 			}

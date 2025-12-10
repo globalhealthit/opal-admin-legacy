@@ -364,7 +364,7 @@ const REGEX_NUMBER = '/[0-9]/';
 const REGEX_MRN = '/^[0-9]*$/i';
 
 // Define patient information type constant array
-const PATIENT_LANGUAGE_ARRAY = array("EN", "FR");
+const PATIENT_LANGUAGE_ARRAY = array("EN");
 const PATIENT_SEX_ARRAY = array("Male", "Female", "Unknown", "Other");
 
 require_once FRONTEND_ABS_PATH . "php". DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."general-sql.php";
@@ -459,10 +459,9 @@ define("HTTP_STATUS_UNPROCESSABLE_ENTITY_ERROR",422);
 define("HTTP_STATUS_LOGIN_TIMEOUT_ERROR",440);
 define("HTTP_STATUS_HTTP_TO_HTTPS_ERROR",497);
 
-define("ABVR_FRENCH_LANGUAGE", "FR");
 define("ABVR_ENGLISH_LANGUAGE", "EN");
 // all language abbreviations in opal admin
-define("OPAL_ADMIN_LANGUAGES",array(ABVR_FRENCH_LANGUAGE, ABVR_ENGLISH_LANGUAGE));
+define("OPAL_ADMIN_LANGUAGES",array(ABVR_ENGLISH_LANGUAGE));
 
 
 /*
