@@ -103,7 +103,7 @@ COPY --from=php-dependencies --chown=www-data:www-data /app/vendor ./vendor
 
 # Specifically add only the required files
 COPY --chown=www-data:www-data ./THIRDPARTY.md ./
-COPY --chown=www-data:www-data ./favicon.png ./
+COPY --chown=www-data:www-data ./mycarex_favicon.png ./
 COPY --chown=www-data:www-data ./index.php ./
 COPY --chown=www-data:www-data ./.htaccess ./
 COPY --chown=www-data:www-data ./css ./css
