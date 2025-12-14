@@ -41,7 +41,7 @@
     "DIAGNOSIS_TRANSLATION": "Diagnosis Import and Aliasing",
     "CRON_LOGS": "Cron Logs",
     "PATIENTS": "Patients",
-    "PATIENT_REGISTRATION": "Opal Registration",
+    "PATIENT_REGISTRATION": "MyCareX Patient Registration",
     "PATIENT_ACTIVITY": "Patient Activity",
     "USERS": "Users",
     "PROFILE": "Profile",
@@ -2720,8 +2720,8 @@
     "MENU": {
       "TITLE": "Patient",
       "SUB_TITLE": "Patients Tools",
-      "REGISTRATION": "Opal Registration",
-      "REGISTRATION_SUB": "Register a patient or caregiver so they can use Opal.",
+      "REGISTRATION": "MyCareX Registration",
+      "REGISTRATION_SUB": "Register a patient or caregiver so they can use MyCareX.",
       "CAREGIVER_ACCESS": "Manage Caregiver Access",
       "CAREGIVER_ACCESS_SUB": "Manage access to patients by their caregivers.",
       "BACK": "Back"
@@ -2759,7 +2759,7 @@
     "REPORT": {
       "TITLE":{
         "MAIN": "Patient Report",
-        "INTRODUCTION": "Search and generate report for opal patients.",
+        "INTRODUCTION": "Search and generate report for MyCareX patients.",
         "INDIVIDUAL": "Individual Report",
         "INDIVIDUAL_DESC": "Used for individual patient statistics",
         "GROUP": "Group Report",
@@ -2778,7 +2778,7 @@
           "TITLE": "Diagnosis",
           "DESC": "Diagnosis Description",
           "DATE": "Diagnosis Date",
-          "SERIAL": "Opal Diagnosis Serial"
+          "SERIAL": "MyCareX Diagnosis Serial"
         },
         "QUESTIONNAIRE":{
           "TITLE": "Questionnaires",
@@ -2789,7 +2789,7 @@
         "APPOINTMENT":{
           "TITLE": "Appointments",
           "SCHEDULED": "Scheduled Appointment Time",
-          "DATE": "Date Added to Opal",
+          "DATE": "Date Added to MyCareX",
           "STATUS": "Status",
           "NAME": "Appointment Name",
           "TYPE": "Appointment Type",
@@ -2807,7 +2807,7 @@
           "NAME": "Test Name",
           "UNIT": "Test Unit",
           "DATE": "Test Date",
-          "OPAL_DATE": "Opal Date Added",
+          "OPAL_DATE": "MyCareX Date Added",
           "MIN": "Min Normal Value",
           "RESULT": "Test Result",
           "MAX": "Max Normal Result",
@@ -2825,7 +2825,7 @@
           "RESULT": "Test Result",
           "DATE_TEST": "Testing Time",
           "DATE_RESULT": "Result Time",
-          "DATE_OPAL": "Added to Opal",
+          "DATE_OPAL": "Added to MyCareX",
           "WARNINGS": "Warnings"
         },
         "NOTES":{
@@ -2856,13 +2856,13 @@
         "GROUP_REPORTS":{
           "NAME": "First Name",
           "NAME_FAMILY": "Last Name",
-          "SERIAL": "Opal Serial",
+          "SERIAL": "MyCareX Serial",
           "AGE": "Age",
           "BIRTH": "Date of Birth",
           "SEX": "Sex",
           "EMAIL": "Email",
           "LANG": "Language",
-          "REG": "Opal Registration",
+          "REG": "MyCareX Registration",
           "DIAGNOSIS": "Diagnosis",
           "DATE_DIAG": "Date of Diagnosis",
           "DATE_SENT": "Date Sent",
@@ -2895,7 +2895,7 @@
         "SEX": "Sex",
         "SERIAL": "Patient Serial",
         "EMAIL": "Email",
-        "LANG": "Opal App Language",
+        "LANG": "MyCareX App Language",
         "ISELECT": "Selected Information",
         "GEN": "Generate Report"
       },
@@ -2908,7 +2908,7 @@
         "TAIL": " Group Reporting",
         "EDUC_TYPE": "Educational/Reference material type:",
         "ALL": "All",
-        "FOUND": "currently found in OpalDB",
+        "FOUND": "currently found in mycarexDB",
         "STATS": "Statistics for this report",
         "MF": "% Female / Male / Unknown",
         "FE": "% French / English preferred",
@@ -2922,7 +2922,7 @@
         "QST_CHOOSE": "Choose questionnaire:",
         "UNIQUE": "Total # unique patients in report",
         "PCNT_COMPLETE": "Total % completed questionnaires",
-        "REGS": "Opal Registrations Over Time",
+        "REGS": "MyCareX Registrations Over Time",
         "PAT_ALL": "All Patients",
         "PAT_FEM": "Female Patients",
         "PAT_MAL": "Male Patients",
@@ -2932,10 +2932,10 @@
     }
   },
   "PATIENT_ADMINISTRATION": {
-    "TITLE": "Opal User Administration",
+    "TITLE": "MyCareX User Administration",
     "DESCRIPTION": "Modify User account information",
     "MENU": {
-      "TITLE": "Opal User Administration",
+      "TITLE": "MyCareX User Administration",
       "PSEARCH": "Search User",
       "PNAME": "User last name",
       "PMRN": "Patient MRN",
@@ -2963,7 +2963,7 @@
     },
     "EMAIL": {
       "TITLE": "Change User Email",
-      "DESCRIPTION": "The email address will be used as the user's username when accessing Opal account.",
+      "DESCRIPTION": "The email address will be used as the user's username when accessing MyCareX account.",
       "NEW_EMAIL": "New email :",
       "EMAIL_CONFIRMED": " Confirm new email :",
       "EMAIL_NOT_SAME": "Email and email confirmation should match.",
@@ -3036,7 +3036,7 @@
     "CONFIRM": "Confirm new password",
     "UPDATE": "Update",
     "LANGUAGE": "Language",
-    "CHANGE": "Change the language for opalAdmin.",
+    "CHANGE": "Change the language for MyCareX Admin.",
     "FRENCH": "French",
     "ENGLISH": "English",
     "INVALID": "Invalid password format",
@@ -3132,7 +3132,7 @@
       "TYPE_USER_EXPLANATION": "By default, select 'Human'. Only use 'Computer system' if you want to give access of the API to an external specific system. In case of doubt, please contact your administrator.",
       "BASIC_INFO": "Basic information",
       "BASIC_INFO_EXPLANATION": "Please provide the information for the new user below.",
-      "WARNING_USER": "You have selected 'Computer System'. Please be advised that type of user cannot log into the OpalAdmin as a regular user and should only be used by other external systems.",
+      "WARNING_USER": "You have selected 'Computer System'. Please be advised that type of user cannot log into the MyCareXAdmin as a regular user and should only be used by other external systems.",
       "CONFIDENTIAL": "Confidential"
     },
     "EDIT": {
@@ -3387,7 +3387,7 @@
     "UNTRANSLATED_PAGE_DISCLAIMER": "This section has not yet been translated, but its original content is provided below for reference purposes. Thank you for your understanding.",
     "SHOW_LICENSE_TEXT": "Show license text"
   },
-  "PATIENT_REGISTRATION_TITLE": "Opal Registration",
+  "PATIENT_REGISTRATION_TITLE": "MyCareX Patient Registration",
   "PATIENT_REGISTRATION_SEARCH_HEADER": "Registration Search",
   "PATIENT_REGISTRATION_SEARCH_DESCRIPTION": "Please enter a valid <strong>12-character</strong> Medicare card number along with the <strong>patient ID</strong> to start the registration process.",
   "MEDICARE_CARD_NUMBER": "Medicare card number",
@@ -3404,7 +3404,7 @@
   "COMPLETE": "Complete",
   "INCOMPLETE": "Incomplete",
   "PATIENT_REGISTRATION_EMAIL_PASSWORD_DESCRIPTION": "Please add a valid email and password.",
-  "PATIENT_REGISTRATION_LANGUAGE_DESCRIPTION": "Please choose the primary language of choice for Opal.",
+  "PATIENT_REGISTRATION_LANGUAGE_DESCRIPTION": "Please choose the primary language of choice for MyCareX.",
   "PATIENT_REGISTRATION_CELLPHONE_DESCRIPTION": "Please assign a cellphone number in a 10-digit format (no hyphens).",
   "PATIENT_REGISTRATION_SECURITY_QUESTION_DESCRIPTION": "Please choose three distinct security questions and answer them.",
   "REGISTER": "Register",
